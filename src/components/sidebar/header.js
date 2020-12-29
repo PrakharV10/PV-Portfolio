@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../App.css'
 import 'font-awesome/css/font-awesome.min.css';
 import profilePic from '../images/IMG_20200224_205539.jpg';
+import {headerList} from './headerList';
 
 const Header = () => {
+
+    const [ind, setInd] = useState(0);
+
+    function clickHandler(heading,index){
+        setInd(index);
+        console.log(ind);
+    }
+
     return (
         <div className="sidebar">
             <div className="contents">
@@ -12,12 +21,27 @@ const Header = () => {
                     <h3>Prakhar <span>Varshney</span></h3>
                 </center>
                 <div className= "headings">
-                    <a href="#home"><i clas="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                    <a href="#about"><i clas="fa fa-user" aria-hidden="true"></i><span>About Me</span></a>
-                    <a href="#skills"><i clas="fa fa-file-code-o" aria-hidden="true"></i><span>Skills</span></a>
-                    <a href="#project"><i clas="fa fa-briefcase" aria-hidden="true"></i><span>Projects</span></a>
-                    <a href="#blog"><i clas="fa fa-book" aria-hidden="true"></i><span>Blogs</span></a>
-                    <a href="#contact"><i clas="fa fa-phone" aria-hidden="true"></i><span>Contact</span></a>
+                    {
+                        headerList.map((heading,i) => {
+                            return(
+                            <a 
+                                key={i} 
+                                href = {heading.link}
+                                onClick = {() => clickHandler(heading,i)}
+                                >
+                                    <span>
+                                        {heading.title}
+                                    </span>
+                            </a>
+                            )
+                        })
+                    }
+                    {/* <a href="#home"><span>Home</span></a>
+                    <a href="#about"><span>About Me</span></a>
+                    <a href="#skills"><span>Skills</span></a>
+                    <a href="#project"><span>Projects</span></a>
+                    <a href="#blog"><span>Blogs</span></a>
+                    <a href="#contact"><span>Contact</span></a> */}
                 </div>
             </div>
 
