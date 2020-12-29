@@ -30,12 +30,12 @@ function Contact() {
                     </div>
                 </div>
 
-                <form className="contact-right-area" action="contact-form-handler.php" method="POST">
+                <form netlify name="contact" className="contact-right-area" method="POST">
                     <h4>SEND ME A NOTE</h4>
                     <div>
                         <input name="name" type="text" placeholder="Name" className="name-input" required/>
-                        <input name="visitor-mail" type="text" placeholder="Email" className="mail-input" required/>
-                        <textarea name="visitor-msg" placeholder="Type Something" className="text-input" required></textarea>
+                        <input name="email" type="text" placeholder="Email" className="mail-input" required/>
+                        <textarea name="message" placeholder="Type Something" className="text-input" required></textarea>
                         <div className="center">
                             <button type="submit">Send Message</button>
                         </div>
