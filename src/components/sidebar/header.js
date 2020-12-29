@@ -29,7 +29,7 @@ const Header = () => {
                             <a 
                                 key={i} 
                                 href = {heading.link}
-                                className = {window.location.href === `https://relaxed-wright-b63d33.netlify.app/${heading.link}`}
+                                className = {window.location.href === `https://relaxed-wright-b63d33.netlify.app/${heading.link}` ? "sideBar-Active" : null}
                                 onClick = {() => clickHandler(heading,i)}
                                 >
                                     <span>
