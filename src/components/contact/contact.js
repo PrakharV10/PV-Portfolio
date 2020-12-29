@@ -30,7 +30,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <form className="contact-right-area" action="./contact-form-handler.php" method="POST">
+                <form className="contact-right-area" action="contact-form-handler.php" method="POST">
                     <h4>SEND ME A NOTE</h4>
                     <div>
                         <input name="name" type="text" placeholder="Name" className="name-input" required/>
