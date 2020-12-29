@@ -32,39 +32,64 @@ body{
 
 
 /* NAVBAR STYLING START */
-
 nav{
+    display: none;
+}
+
+nav .upper-nav{
     background-color: var(--sidebar);
-    padding: 20px;
-    display: flex;
+    padding: 1rem;
+    display: none;
     justify-content: space-between;
+    height: 2rem;
 }
 
-.left-area{
-    color: #fff;
+.nav-left-area{
+    color: #DEE3E4;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.left-area span{
+.nav-left-area span{
     color:var(--highlight);
 }
 
-.right-area{
+.nav-right-area{
     align-self: center;
 }
 
-.contact-btn{
-    text-decoration: none;
-    color:var(--sidebar);
-    background-color: var(--highlight);
-    padding: .5rem;
-    border-radius: 10px;
-    font-weight: 700;
+.nav-links{
+    display: block;
+    z-index: 4;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.959);
+    left:0;
+    right: 0;
+    transition: all .3s;
+   
 }
 
-.contact-btn:hover{
-    background-color: #daa404;
+.nav-links-hide{
+    display: none;
+    transition: all .3s;
+}
+
+
+.nav-link-inner{
+    width: 96%;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #DEE3E4;
+    width: 100%;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgb(48, 47, 47);
 }
 
 /* NAVBAR STLING END */
@@ -273,12 +298,20 @@ nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
+    padding-top: 5rem;
+}
+.head-wrapper{
+    display: flex;
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
 }
 
-.about-heading{
-    position: relative;
+.heading{
+    width: 100%;
+    align-self: center!important;
+    position: absolute!important;
     z-index:1;
-    top: 7rem;
     font-family: 'Poppins', sans-serif;
     color : #fff;
     font-weight: 500;
@@ -286,7 +319,7 @@ nav{
 
 }
 
-.about-heading .underline{
+.heading .underline{
     position: relative;
     background-color: var(--highlight);
     height : 3px;
@@ -294,12 +327,22 @@ nav{
     margin: auto;
 }
 
-.about-backhead{
-    margin-top: -1rem;
+.backhead{
+    position: relative;
     font-family: 'Poppins', sans-serif;
     color: var(--back-text);
     font-weight: 900;
-    font-size: 8.5rem;
+    font-size: calc(1.95rem + 8.4vw)!important;
+    z-index: 0;
+}
+
+.backhead2{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: var(--back-text2);
+    font-weight: 900;
+    font-size: calc(1.95rem + 8.4vw)!important;
+    z-index: 0;
 }
 
 .about-subhead-wrapper{
@@ -307,14 +350,14 @@ nav{
     margin: auto;
     padding-bottom: 3rem;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
 
 .about-subhead-left{
     /* flex: 75%; */
-    width:75%;
-    margin: auto;
+    width:65%;
+    /* margin: auto; */
     text-align: left;
 }
 
@@ -335,7 +378,7 @@ nav{
     color : #90928E;
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Montserrat', sans-serif; */
-    width: 90%;
+    /* width: 90%; */
     font-size: 1rem;
     font-weight: 400;
 }
@@ -388,33 +431,7 @@ nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-}
-
-.skills-heading{
-    position: relative;
-    z-index:1;
-    top: 7rem;
-    font-family: 'Poppins', sans-serif;
-    color : #fff;
-    font-weight: 500;
-    font-size: 2.5rem;
-
-}
-
-.skills-heading .underline{
-    position: relative;
-    background-color: var(--highlight);
-    height : 3px;
-    width : 60px;
-    margin: auto;
-}
-
-.skills-backhead{
-    margin-top: -1rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--back-text2);
-    font-weight: 800;
-    font-size: 8.5rem;
+    padding-top: 5rem;
 }
 
 .skill-content{
@@ -469,40 +486,15 @@ nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-}
-
-.project-heading{
-    position: relative;
-    z-index:1;
-    top: 7rem;
-    font-family: 'Poppins', sans-serif;
-    color : #fff;
-    font-weight: 500;
-    font-size: 2.5rem;
-
-}
-
-.project-heading .underline{
-    position: relative;
-    background-color: var(--highlight);
-    height : 3px;
-    width : 60px;
-    margin: auto;
-}
-
-.project-backhead{
-    margin-top: -1rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--back-text);
-    font-weight: 800;
-    font-size: 8.5rem;
+    padding-top: 5rem;
 }
 
 .project-content ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width:60%;
     margin : 0rem auto 2rem;
+    padding-left: 0;
 }
 
 .project-content ul li{
@@ -514,6 +506,7 @@ nav{
     border-bottom-width: 3px;
     border-bottom-style: solid;
     cursor: pointer;
+    margin: auto;
 }
 
 .project-content ul .active{
@@ -592,33 +585,7 @@ nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-}
-
-.blogs-heading{
-    position: relative;
-    z-index:1;
-    top: 7rem;
-    font-family: 'Poppins', sans-serif;
-    color : #fff;
-    font-weight: 500;
-    font-size: 2.5rem;
-
-}
-
-.blogs-heading .underline{
-    position: relative;
-    background-color: var(--highlight);
-    height : 3px;
-    width : 60px;
-    margin: auto;
-}
-
-.blogs-backhead{
-    margin-top: -1rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--back-text2);
-    font-weight: 800;
-    font-size: 8.5rem;
+    padding-top: 5rem;
 }
 
 .blogs-content{
@@ -714,33 +681,7 @@ nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-}
-
-.contact-heading{
-    position: relative;
-    z-index:1;
-    top: 7rem;
-    font-family: 'Poppins', sans-serif;
-    color : #fff;
-    font-weight: 500;
-    font-size: 2.5rem;
-
-}
-
-.contact-heading .underline{
-    position: relative;
-    background-color: var(--highlight);
-    height : 3px;
-    width : 75px;
-    margin: auto;
-}
-
-.contact-backhead{
-    margin-top: -1rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--back-text);
-    font-weight: 800;
-    font-size: 8.5rem;
+    padding-top: 5rem;
 }
 
 .contact-content{
@@ -751,10 +692,11 @@ nav{
     margin: auto;
     display: flex;
     line-height: 1.7rem;
+    justify-content: space-between;
 }
 
 .contact-left-area{
-    width:25%;
+    width:23%;
 }
 
 .contact-left-area h4{
@@ -765,7 +707,7 @@ nav{
 }
 
 .contact-left-area p{
-    width: 80%;
+    /* width: 80%; */
     color: #90928E;
 }
 
@@ -790,6 +732,12 @@ nav{
     justify-content: space-between;
 }
 
+.contact-first-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .name-input, .mail-input{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -798,7 +746,7 @@ nav{
     background-color: var(--secondary-sec);
     padding : 1rem;
     border-radius: 2px;
-    width:45%;
+    width:44%;
     margin-bottom: 1rem;
     outline: none;
     border: 0;
@@ -814,9 +762,14 @@ nav{
     outline: none;
     border: 0;
     border-radius: 2px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     height: 5rem;
     color: white;
+}
+
+.center{
+    width: 100%;
+    text-align: center !important;
 }
 
 .contact-right-area button{
@@ -850,4 +803,229 @@ footer div{
 footer div a{
     text-decoration: none;
     color : var(--highlight);
+}
+
+/* FOOTER SECTION END */
+
+
+/* RESPONSIVITY */
+@media screen and (max-width : 1200px){
+    .name-input, .mail-input{
+        width : 100%
+    }
+}
+
+@media screen and (max-width : 1020px){
+    .project-info{
+        width:90%;
+    }
+   
+    .blogs-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 990px){
+
+    nav{
+        display: block;
+    }
+
+    nav .upper-nav{
+        display: flex;
+        position: fixed;
+        top : 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        /* width: 100%; */
+    }
+
+    .main-wrapper{
+        margin: 3.8rem 0 0;
+    }
+    
+    .sidebar{
+        display: none;
+    }
+
+    footer div{
+        text-align: center;
+    }
+
+    .about-subhead-wrapper{
+        flex-direction: column;
+    }
+
+    .about-subhead-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-subhead-left h2{
+        font-size: 1.75rem;
+    }
+
+    .about-subhead-right{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width : 760px){
+
+    .hero-heading2{
+        font-size: 3.5rem;
+    }
+
+    .hero-subhead{
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    .hero-btn{
+        width:15%
+    }
+
+    .skill-content{
+        flex-direction: column;
+    }
+
+    .heading{
+        font-size: 4vw;
+    }
+
+    .info-card{
+        width: 90%;
+        margin: 0 auto 1.5rem;
+    }
+
+    .project-info{
+        flex-direction: column;
+        width:80%;
+    }
+    
+    .project-card{
+        width: 100%;
+        margin: 0 auto 2rem;
+    }
+
+    .project-desc{
+        min-height: max-content;
+    }
+
+    .project-content ul{
+        width: 90%;
+    }
+
+    .project-content ul li{
+        font-size: .9rem;
+    }
+
+    .right-area{
+        min-height: 10rem;
+    }
+
+    .blogs-box{
+        flex-direction: column;
+    }
+
+    .one-blog{
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-desc{
+        min-height: max-content;
+    }
+
+    .blog-selector{
+        width: 20%;
+    }
+    .contact-content{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 70%;
+    }
+
+    .contact-left-area, .contact-right-area{
+        width: 100%;
+    }
+
+    .contact-contact-info a{
+        padding :0 .5rem;
+    }
+}
+
+@media screen and (max-width:425px){
+    .nav-left-area{
+        font-size: 1rem;
+        align-self: center;
+
+    }
+
+    #linkedin1,
+    #website1,
+    #twitter1,
+    #git1{
+        display: none;
+    }
+
+    #ham{
+        font-size: 1.1rem;
+    }
+
+    .hero-heading2{
+        font-size: 2.3rem;
+    }
+
+    .hero-btn{
+        width: 35%;
+    }
+
+    .heading{
+        font-size: 1.3rem;
+    }
+
+
+    .about-subhead-wrapper{
+        width: 90%;
+    }
+
+    .about-subhead-left h2{
+        font-size: 1.3rem;
+    }
+
+    .skill-content{
+        width: 90%;
+    }
+
+    .info-card{
+        width: 100%;
+    }
+
+    .card-icon{
+        padding: 1rem;
+    }
+
+    .project-content ul{
+        width: 95%;
+    }
+
+    .project-content ul li{
+        font-size: .7rem;
+    }
+
+    .right-area{
+        padding: 2rem;
+    }
+
+    .one-blog{
+        padding: 2rem;
+    }
+
+    .blog-selector{
+        width: 40%;
+    }
 }

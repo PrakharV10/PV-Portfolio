@@ -14,13 +14,15 @@ function Blogs() {
 
     return (
         <section id="blog" className="section5">
-            <div className="blogs-heading">
-                My Blogs
-                <div className="underline"></div>
-            </div>
+            <div className="head-wrapper">
+                <div className="heading">
+                    My Blogs
+                    <div className="underline"></div>
+                </div>
 
-            <div className="blogs-backhead">
-                WRITINGS
+                <div className="backhead2">
+                    WRITINGS
+                </div>
             </div>
 
             <div className="blogs-content">

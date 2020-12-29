@@ -7,10 +7,12 @@ import Project from './components/project/project';
 import Blogs from './components/Blogs/Blogs';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div className="main-wrapper">
+      <Navbar />
       <Header />
 
       <main>

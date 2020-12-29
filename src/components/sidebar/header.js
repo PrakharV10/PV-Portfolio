@@ -11,8 +11,6 @@ const Header = () => {
     function clickHandler(heading,index){
         setInd(index);
         console.log(ind);
-        console.log(`https://relaxed-wright-b63d33.netlify.app/${heading.link}`);
-        console.log(window.location.href);
     }
 
     return (
@@ -29,7 +27,6 @@ const Header = () => {
                             <a 
                                 key={i} 
                                 href = {heading.link}
-                                className = {window.location.href === `https://relaxed-wright-b63d33.netlify.app/${heading.link}` ? "sideBar-Active" : null}
                                 onClick = {() => clickHandler(heading,i)}
                                 >
                                     <span>

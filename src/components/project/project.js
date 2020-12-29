@@ -15,14 +15,17 @@ function Project() {
 
     return (
         <section id="project" className="section4">
-            <div className="project-heading">
-                My Work
-                <div className="underline"></div>
+            <div className="head-wrapper">
+                <div className="heading">
+                    My Work
+                    <div className="underline"></div>
+                </div>
+
+                <div className="backhead">
+                    PROJECTS
+                </div>
             </div>
 
-            <div className="project-backhead">
-                PROJECTS
-            </div>
             <div className="project-content">
                 <ul>
                     {

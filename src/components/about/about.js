@@ -3,15 +3,15 @@ import React from 'react'
 function About() {
     return (
         <section id="about" className="section2">
-            <div className="about-heading">
-                My Story
-                <div className="underline"></div>
+            <div className="head-wrapper">
+                <div className="backhead">
+                    ABOUT ME
+                </div>
+                <div className="heading">
+                    My Story
+                    <div className="underline"></div>
+                </div>
             </div>
-
-            <div className="about-backhead">
-                ABOUT ME
-            </div>
-
             <div className="about-subhead-wrapper">
                 <div className="about-subhead-left">
                     <h2>I'm <span>Prakhar Varshney,</span> A Web Developer</h2>

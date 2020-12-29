@@ -7,15 +7,16 @@ import { faReact } from "@fortawesome/free-brands-svg-icons"
 function Skills() {
     return (
         <section id="skills" className="section3">
-            <div className="skills-heading">
-                Technologies
-                <div className="underline"></div>
-            </div>
+            <div className = "head-wrapper">
+                <div className="heading">
+                    What I do?
+                    <div className="underline"></div>
+                </div>
 
-            <div className="skills-backhead">
-                SKILLS
+                <div className="backhead2">
+                    SKILLS
+                </div>
             </div>
-
             <div className= "skill-content">
                 <div className="info-card">
                     <div><FontAwesomeIcon className="card-icon" icon={faCode} size='2x'/></div>

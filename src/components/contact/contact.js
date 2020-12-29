@@ -3,15 +3,16 @@ import React from 'react'
 function Contact() {
     return (
         <section id="contact" className="section6">
-            <div className="contact-heading">
-                Get In Touch
-                <div className="underline"></div>
-            </div>
+            <div className="head-wrapper">
+                <div className="heading">
+                    Get In Touch
+                    <div className="underline"></div>
+                </div>
 
-            <div className="contact-backhead">
-                CONTACT
+                <div className="backhead">
+                    CONTACT
+                </div>
             </div>
-
             <div className="contact-content">
                 <div className="contact-left-area">
                     <h4>ADDRESS</h4>
@@ -33,12 +34,14 @@ function Contact() {
                 <form name="contact" className="contact-right-area">
                     <h4>SEND ME A NOTE</h4>
                     <div>
-                        <input name="name" type="text" placeholder="Name" className="name-input" required/>
-                        <input name="email" type="text" placeholder="Email" className="mail-input" required/>
-                        <textarea name="message" placeholder="Type Something" className="text-input" required></textarea>
-                        <div className="center">
-                            <button type="submit">Send Message</button>
+                        <div className="contact-first-input">
+                            <input name="name" type="text" placeholder="Name" className="name-input" required/>
+                            <input name="email" type="text" placeholder="Email" className="mail-input" required/> 
                         </div>
+                        <textarea name="message" placeholder="Type Something" className="text-input" required></textarea>
+                        <p className="center">
+                            <button type="submit">Send Message</button>
+                        </p>
                     </div>
                 </form>
             </div>
