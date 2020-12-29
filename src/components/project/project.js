@@ -4,7 +4,7 @@ import {projectList} from './projectList';
 function Project() {
 
     const [current, setCurrent] = useState("CLI App");
-    const [ind, setInd] = useState(0);
+    const [ind, setInd] = useState(1);
 
     var projectHead = Object.keys(projectList);
 
