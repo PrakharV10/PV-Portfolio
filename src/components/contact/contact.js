@@ -30,7 +30,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <form netlify name="contact" className="contact-right-area" method="POST">
+                <form name="contact" className="contact-right-area">
                     <h4>SEND ME A NOTE</h4>
                     <div>
                         <input name="name" type="text" placeholder="Name" className="name-input" required/>
