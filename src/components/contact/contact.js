@@ -20,13 +20,13 @@ function Contact() {
         
                     <h4>FOLLOW ME</h4>
                     <div className="contact-contact-info">
-                        <a href="https://prakhar10varshney.netlify.app/index.html" target = "_blank" rel="noreferrer"><i className="fa fa-globe" id = "website" aria-hidden="true"></i>
+                        <a href="https://prakhar10varshney.netlify.app/index.html" target = "_blank" rel="noreferrer" ><i className="fa fa-globe" id = "website" aria-hidden="true" ></i>
                         </a>
-                        <a href="https://twitter.com/Prakhar10V" target = "_blank" rel="noreferrer"><i className="fa fa-twitter" id="twitter" aria-hidden="true"></i>
+                        <a href="https://twitter.com/Prakhar10V" target = "_blank" rel="noreferrer" ><i className="fa fa-twitter" id="twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/PrakharV10" target = "_blank" rel="noreferrer"><i className="fa fa-github" id="git" aria-hidden="true"></i>
+                        <a href="https://github.com/PrakharV10" target = "_blank" rel="noreferrer" ><i className="fa fa-github" id="git" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/prakhar-varshney-6b3a92181/" target = "_blank" rel="noreferrer"><i className="fa fa-linkedin" id = "linkedin" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/prakhar-varshney-6b3a92181/" target = "_blank" rel="noreferrer" ><i className="fa fa-linkedin" id = "linkedin" aria-hidden="true" ></i>
                         </a>
                     </div>
                 </div>

@@ -23,6 +23,9 @@ body{
 :root{
     --sidebar : #111418;
     --highlight : #007BFF;
+    --light-highlight : #469efc ;
+    /* --highlight : #39FF14;
+    --light-highlight : #41ca28; */
     --primary-sec : #212529;
     --back-text : #2C3034;
     --back-text2 : #394046;
@@ -390,7 +393,7 @@ nav .upper-nav{
 }
 
 .about-subhead-left p a:hover{
-    color: #469efc;
+    color: var(--light-highlight);
 }
 
 .about-subhead-right{
@@ -417,7 +420,7 @@ nav .upper-nav{
 }
 
 .about-subhead-right p a:hover{
-    color: #469efc;
+    color: var(--light-highlight);
 }
 
 /* ABOUT SECTION STYLING END */
@@ -571,7 +574,7 @@ nav .upper-nav{
 }
 
 .right-area a:hover{
-    color : #469efc;
+    color : var(--light-highlight);
 }
 
 /* PROJECT SECTION STYLING END */
@@ -639,7 +642,7 @@ nav .upper-nav{
 }
 
 .one-blog a:hover{
-    color :  #469efc;
+    color :  var(--light-highlight);
 }
 
 .blog-selector{

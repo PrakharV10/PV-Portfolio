@@ -33,6 +33,12 @@ export const blogList = {
             Date : "December 17,2020",
             Desc : "\"After JavaScript variables, the next amazing thing is JavaScript Functions. This articles focuses on understanding the different type of JavaScript Functions& the different Notations used.\"",
             Link : "https://prakhar10-blog.netlify.app/Blog-5/"
+        },
+        {
+            Head : "Definitive Guide for Creating Carousel in React",
+            Date : "January 01,2021",
+            Desc : "\"In this article, we will focus on creating Carousels in our website, add Active Classes to them using React Hooks. overall increasing our Website's UX Design!\"",
+            Link : "https://prakhar10-blog.netlify.app/Blog-6/"
         }
     ]
 }
