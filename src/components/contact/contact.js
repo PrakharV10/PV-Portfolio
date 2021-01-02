@@ -1,6 +1,21 @@
-import React from 'react'
+import React from 'react';
+import emailjs from 'emailjs-com';
 
 function Contact() {
+
+    function sendEmail(e){
+        e.preventDefault();
+
+    emailjs.sendForm('service_d7eolao', 'template_oezh9io', e.target, 'user_tMIM9t9G2wAYMXPbnZvnA')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      alert("Your Email is sent successfully!!");
+      e.target.reset()
+    }
+
     return (
         <section id="contact" className="section6">
             <div className="head-wrapper">
@@ -31,7 +46,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <form name="contact" className="contact-right-area">
+                <form name="contact" className="contact-right-area" onSubmit={sendEmail}>
                     <h4>SEND ME A NOTE</h4>
                     <div>
                         <div className="contact-first-input">

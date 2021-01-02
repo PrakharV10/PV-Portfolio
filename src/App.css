@@ -776,6 +776,7 @@ nav .upper-nav{
 }
 
 .contact-right-area button{
+    outline: none;
     font-family: 'Poppins', sans-serif;
     padding: 1rem 2rem;
     font-size: 1rem;

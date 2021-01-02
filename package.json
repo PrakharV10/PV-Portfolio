@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.6.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "emailjs-com": "^2.6.4",
     "font-awesome": "^4.7.0",
     "react": "^17.0.1",
     "react-animate-on-scroll": "^2.1.5",
