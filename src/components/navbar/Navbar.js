@@ -15,7 +15,7 @@ function Navbar() {
 
                 <div className="nav-right-area">
                     <div className="contact-info">
-                        <a href="https://prakhar10varshney.netlify.app/index.html" target = "_blank" rel="noreferrer"><i className="fa fa-globe" id = "website1" aria-hidden="true"></i>
+                        <a href="https://prakhar10-blog.netlify.app/" target = "_blank" rel="noreferrer"><i className="fa fa-globe" id = "website1" aria-hidden="true"></i>
                         </a>
                         <a href="https://twitter.com/Prakhar10V" target = "_blank" rel="noreferrer"><i className="fa fa-twitter" id="twitter1" aria-hidden="true"></i>
                         </a>
