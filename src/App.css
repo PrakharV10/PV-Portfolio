@@ -301,7 +301,7 @@ nav .upper-nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-    padding-top: 5rem;
+    padding-top: 0rem;
 }
 .head-wrapper{
     display: flex;
@@ -434,7 +434,7 @@ nav .upper-nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-    padding-top: 5rem;
+    padding-top: 0rem;
 }
 
 .skill-content{
@@ -489,7 +489,7 @@ nav .upper-nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-    padding-top: 5rem;
+    padding-top: 0rem;
 }
 
 .project-content ul{
@@ -588,7 +588,7 @@ nav .upper-nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-    padding-top: 5rem;
+    padding-top: 0rem;
 }
 
 .blogs-content{
@@ -684,7 +684,7 @@ nav .upper-nav{
     height: max-content;
     text-align: center;
     color: #D7D7D7;
-    padding-top: 5rem;
+    padding-top: 0rem;
 }
 
 .contact-content{
